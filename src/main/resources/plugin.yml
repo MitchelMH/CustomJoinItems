@@ -1,0 +1,16 @@
+name: CustomJoinItems
+main: com.planetcraft.customjoinitems.CustomJoinItemsPlugin
+version: 1.0
+api-version: 1.21
+depend: [PlaceholderAPI]
+
+commands:
+  customjoinitems:
+    description: Comandos para administrar CustomJoinItems
+    usage: /customjoinitems <reload|additem|setname|setlore|remove>
+    permission: customjoinitems.admin
+
+permissions:
+  customjoinitems.admin:
+    description: Permite usar los comandos administrativos del plugin
+    default: op

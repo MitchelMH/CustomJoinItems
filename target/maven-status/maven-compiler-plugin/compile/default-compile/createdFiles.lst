@@ -1,0 +1,4 @@
+com\planetcraft\customjoinitems\CustomJoinItemsPlugin.class
+com\planetcraft\customjoinitems\CustomJoinItemsCommands.class
+com\planetcraft\customjoinitems\TeleportBowListener.class
+com\planetcraft\customjoinitems\PlayerVisibilityListener.class

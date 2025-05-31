@@ -1,0 +1,78 @@
+# Activar o desactivar debug (true/false)
+debug: false
+# ===============================================
+# Configuración de CustomJoinItems
+# ===============================================
+
+# Lista de ítems que se entregan al jugador al unirse o revivir.
+# Deben coincidir con las secciones definidas en 'item-settings'.
+items:
+  - menu
+  - perfil
+
+# ===============================================
+# Configuración de cada ítem personalizado
+# ===============================================
+
+item-settings:
+  menu:
+    material: COMPASS
+    name: "&aNavegador &7(Click Derecho)"
+    lore:
+      - "&7Juega y sobrevive en el mundo principal."
+      - "&7Jugadores conectados: %server_online%"
+    slot: 0
+    permission: "customjoinitems.menu"
+    command: "menu"  # Comando ejecutado al hacer clic.
+
+  perfil:
+    material: PLAYER_HEAD
+    name: "&aPerfil &7(Click Derecho)"
+    lore:
+      - "&7Este es tu perfil personalizado."
+    slot: 7
+    permission: "customjoinitems.perfil"
+    command: "profile"  # Comando que se ejecuta al hacer clic.
+
+# ===============================================
+# Configuración del Arco Teleport
+# ===============================================
+
+teleport-bow:
+  enabled: true
+  slot: 4
+  material: BOW
+  name: "&dArco Teleport"
+  lore:
+    - "&7Dispara y teletransportate."
+    - "&7¡Viaja a donde apunte tu flecha!"
+  give-arrow: true  # Da automáticamente una flecha en el slot 35 (fuera de la hotbar).
+
+# ===============================================
+# Configuración avanzada
+# ===============================================
+
+database:
+  enabled: false  # Habilitar/deshabilitar la base de datos MySQL.
+  host: "localhost"
+  port: "3306"
+  name: "minecraft"
+  user: "root"
+  password: "password"
+
+# Dar ítems al morir (true = dar ítems, false = no dar).
+give-items-on-death: true
+
+# ===============================================
+# Configuración general
+# ===============================================
+
+cooldown-seconds: 5  # Tiempo de espera global entre clics en ítems (en segundos).
+
+messages:
+  visibility-on: "&aAhora puedes ver a todos los jugadores."
+  visibility-off: "&cHas ocultado a todos los jugadores."
+
+# ===============================================
+# ¡No modifiques las líneas de estructura si no sabes!
+# ===============================================
